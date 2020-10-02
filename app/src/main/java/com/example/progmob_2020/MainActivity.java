@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                Intent intent = new Intent(MainActivity.this,HelpActivity.class);
+               Bundle b = new Bundle();
+
+               b.putString("help_string",myEditText.getText().toString());
+               intent.putExtras(b);
+
                startActivity(intent);
             }
         }};

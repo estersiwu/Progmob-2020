@@ -13,5 +13,10 @@ public class HelpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_help);
 
         TextView txtHelp = (TextView)findViewById(R.id.textViewHelp);
+
+        Bundle b = getIntent().getExtras();
+        String textHelp = b.getString("help_string");
+        txtHelp.setText(textHelp);
+
     }
 }
