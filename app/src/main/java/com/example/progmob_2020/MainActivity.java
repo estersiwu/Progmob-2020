@@ -2,6 +2,7 @@ package com.example.progmob_2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView txtView = (TextView)findViewById(R.id.mainActivityTextView);
         Button myBtn = (Button)findViewById(R.id.button1);
         final EditText myEditText = (EditText)findViewById(R.id.editText1);
+        Button btnHelp = (Button)findViewById(R.id.btnHelp);
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -30,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 txtView.setText(myEditText.getText().toString());
             }
         });
+
+        btnHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this,HelpActivity.class);
+               startActivity(intent);
+            }
+        }};
     }
 }
