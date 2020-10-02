@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tes_constraint_layout);
 
         //variable
-        final TextView txtView = (TextView)findViewById(R.id.mainActivityTextView);
+        /*final TextView txtView = (TextView)findViewById(R.id.mainActivityTextView);
         Button myBtn = (Button)findViewById(R.id.button1);
         final EditText myEditText = (EditText)findViewById(R.id.editText1);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
         btnHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent = new Intent(MainActivity.this,HelpActivity.class);
-               Bundle b = new Bundle();
+                Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                Bundle b = new Bundle();
 
-               b.putString("help_string",myEditText.getText().toString());
-               intent.putExtras(b);
+                b.putString("help_string", myEditText.getText().toString());
+                intent.putExtras(b);
 
-               startActivity(intent);
+                startActivity(intent);
             }
-        }};
+        }};*/
     }
 }
