@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.progmob_2020.Pertemuan2.CardViewTestActivity;
 import com.example.progmob_2020.Pertemuan2.ListActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnList = (Button)findViewById(R.id.buttonListView);
         Button btnRecycler = (Button)findViewById(R.id.buttonRecyclerView);
         Button btnCard = (Button)findViewById(R.id.buttonCardView);
-
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -67,6 +67,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardViewTestActivity.class);
                 startActivity(intent);
             }
         });
