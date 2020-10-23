@@ -12,10 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Crud.MainMhsActivity"
+        <activity android:name=".Crud.HapusMhsActivity"></activity>
+        <activity android:name=".Crud.MahasiswaAddActivity" />
+        <activity android:name=".Crud.MahasiswaUpdateActivity" />
+        <activity android:name=".Crud.MahasiswaGetAllActivity" />
+        <activity
+            android:name=".Crud.MainMhsActivity"
             android:label="Menu CRUD Mahasiswa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,9 +31,7 @@
         <activity android:name=".Pertemuan4.DebuggingActivity" />
         <activity android:name=".TrackerActivity" />
         <activity android:name=".HelpActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
