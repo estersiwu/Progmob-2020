@@ -14,6 +14,9 @@ import com.example.progmob_2020.Pertemuan2.CardViewTestActivity;
 import com.example.progmob_2020.Pertemuan2.ListActivity;
 import com.example.progmob_2020.Pertemuan2.RecyclerActivity;
 import com.example.progmob_2020.Pertemuan4.DebuggingActivity;
+import com.example.progmob_2020.Pertemuan6.LoginActivity;
+
+import java.util.prefs.Preferences;
 
 public class MainActivity extends AppCompatActivity {
 
